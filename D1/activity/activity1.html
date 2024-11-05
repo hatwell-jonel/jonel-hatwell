@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        #main{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Welcome to cafe delights</h1>
+        <p>Your cozy corner for the best and treats in town.</p>
+    </header>
+
+    <main id="main">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Please fill out the form below:</p>
+
+        <form action="">
+
+            <fieldset>
+                <legend>Personal infomation</legend>
+                 
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+
+                <div>
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY"  required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Visit Information</legend>
+                   
+                <div>
+                    <label for="visitdate">preferred date to visit:</label>
+                    <input type="date" id="visitdate" placeholder="MM/DD/YYYY"  name="visitdate" required>
+                </div>
+
+                <div>
+                    <label for="visittime">preferred time to visit:</label>
+                    <input type="time" id="visittime" name="visittime" required>
+                </div>
+                
+
+                <div>
+                    <label for="">are you a returning customer?</label>
+                    <br>
+                    <input type="radio" name="yes" id="yes" value="yes"><label for="yes">yes</label>
+                    <br>
+                    <input type="radio" name="no" id="no" value="no"><label for="no">no</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Preferences</legend>
+                <div>
+                    <label for="">Favorite drink:</label>
+                    <select name="drink" id="drink">
+                        <option value="coffee">coffee</option>
+                        <option value="tea">tea</option>
+                        <option value="water">water</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="">select your dietary preferences:</label>
+                    <input type="checkbox" name="veg" id="veg">
+                    <input type="checkbox" name="nonveg" id="nonveg">
+                    <input type="checkbox" name="glutenfree" id="glutenfree">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <div>
+                    <label for="">Rate your last visit (1-5):</label>
+                    <input type="range" name="rating" id="rating" min="1" max="5">
+                </div>
+    
+                <div>
+                    <label for="">Additional comments:</label>
+                    <br>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+    
+                <div>
+                    <label for="">Would you like to receive our newsletter?</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+            </fieldset>   
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    
+
+
+    
+</body>
+</html>
