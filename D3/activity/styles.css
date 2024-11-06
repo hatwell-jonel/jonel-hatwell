@@ -1,0 +1,205 @@
+:root{
+    --clr-yellow : rgb(244, 200, 77);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'poppins', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    width: 100px;
+    height: 50px;
+}
+
+.content-center{
+    padding-inline: 5%;
+    margin: auto;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    height: 10% !important;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white; /* Ensure it has a background color */
+    z-index: 1000; /* Make sure it stays on top of other elements */
+}
+
+
+nav ul {
+    display: flex;
+    gap: 15px
+}
+
+
+.link{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.link:target {
+    color:var(--clr-yellow); /* Yellow color for active link */
+}
+
+
+.link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color:var(--clr-yellow);
+    bottom: -7px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.link:hover::after,
+.link:target::after {
+    width: 100%;
+}
+
+.actions{
+    display: flex;
+    gap: 12px;
+}
+
+.actions li i {
+    font-size: 1.1rem;
+}
+
+main{
+    margin-top: 0.1%;
+}
+
+main section {
+    border: 1px solid red;
+    height: 90vh !important;
+}
+
+/* Team Start*/
+#team h2{
+    text-align: center;
+    margin-block: 2rem;
+    font-size: 3.5rem;
+    color: var(--clr-yellow);
+}
+
+#team h2 span{
+    position: relative;
+    color: var(--clr-yellow);
+}
+
+/* #team h2 span::after{
+    content: "";
+    position: absolute                                                                         ;
+    height: 2px;
+    width: 100%;
+} */
+
+.team_container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.img_container{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+    width: 245px;
+    height: 245px;
+    padding: 1rem 1.7rem;
+}
+
+.team_container img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#chef4{
+    object-fit: cover;
+    height: 100%;
+}
+/* Team End*/
+
+
+/* Footer Start */
+footer{
+    background-color: #eeee;
+    padding: 1rem 0rem;
+}
+
+footer .grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer div h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+}
+
+footer .follows ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .copyright{
+    width: 100% !important;
+    margin-top: 14px;
+    text-align: center;
+}
+
+footer .copyright span{
+    color: var(--clr-yellow);
+    font-weight: bold;
+}
+/* Footer End */
