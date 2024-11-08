@@ -3,70 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actvity 3</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <header class="content-center">
-        <img id="logo" src="./assets/images/logo.png" alt="logo">
+    <header>
+        <div class="content_center header">
+                <a href="#">
+                    <img src="./image/logo.png" alt="logo" id="logo" >
+                </a>
         
-        <nav>
-            <ul>
-                <li><a class="link" href="#home">Home</a></li>
-                <li><a class="link" href="#about">About</a></li>
-                <li><a class="link" href="#menu">Menu</a></li>
-                <li><a class="link" href="#gallery">Gallery</a></li>
-                <li><a class="link" href="#review">Review</a></li>
-                <li><a class="link" href="#order">Order</a></li>
-            </ul>
-        </nav>
-
-
-        <ul class="actions">
-            <li>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </li>
-            <li>
-                <i class="fa-solid fa-heart"></i>
-            </li>
-            <li>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </li>
-        </ul>
+                <ul class="navlink">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+        
+                <ul class="navicons">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+        </div>
     </header>
 
-    <main>
-        <!-- <section class="content-center" id="home"></section>     -->
-        <!-- <section class="content-center" id="about">about</section>     -->
-        <!-- <section class="content-center" id="menu">menu</section>     -->
-        <!-- <section class="content-center" id="gallery">gallery</section>     -->
-        <!-- <section class="content-center" id="review">review</section>     -->
-        <!-- <section class="content-center" id="order">order</section>     -->
-        <section class="content-center" id="team">
-            <h2>Our <span>Team</span></h2>
+    <main >
 
-            <div class="team_container">
-                <div class="img_container">
-                    <img src="./assets/images/chef1.png" alt="chef1">
+        <section id="home" class="content_center">
+            <div class="content_left">
+                <h1>Get Fresh <span class="txt-yellow">Food</span> <br> in a Easy Way</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed fugiat laboriosam necessitatibus similique deleniti! Nobis adipisci officia ducimus, magnam debitis animi cum dolorum incidunt maiores similique esse, facilis ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et quidem veritatis quo dolorum earum expedita, similique neque iure perspiciatis cumque dignissimos voluptatum minima nesciunt, dolorem ab modi doloribus deleniti.</p>
+                <button class="order_now">Order Now</button>
+            </div>
+            <div class="content_right">
+                <img src="./image/main_img.png" alt="">
+            </div>
+        </section>
+
+        <section id="about" class="content_center">
+            <div class="content_left">
+                <h2><span class="txt-yellow">About</span> Us</h2>
+                
+                <p class="wcu">Why choose us?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed fugiat laboriosam necessitatibus similique deleniti! Nobis adipisci officia ducimus, magnam debitis animi cum dolorum incidunt maiores similique esse, facilis ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et quidem veritatis quo dolorum earum expedita.</p>
+
+                <button class="order_now">Order Now </button>
+            </div>
+            <div class="content_right">
+                <img src="./image/Food-Plate.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu" class="content_center">
+            <h2>Our <span class="txt-yellow">Menu</span></h2>
+            <div class="menu_grid">
+                <div class="menu_card">
+                    <img src="./image/buger.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Burger</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
                 </div>
 
-                <div class="img_container">
-                    <img src="./assets/images/chef2.png" alt="chef1">
+                <div class="menu_card">
+                    <img src="./image/pasta.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Pasta</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
                 </div>
 
-                <div class="img_container">
-                    <img src="./assets/images/chef3.jpg" alt="chef1">
+                <div class="menu_card">
+                    <img src="./image/lasagna.webp" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">lasagna</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
                 </div>
 
-                <div class="img_container">
-                    <img id="chef4" src="./assets/images/chef4.jpg" alt="chef1">
+                <div class="menu_card">
+                    <img src="./image/chocolate_Drink.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Drink</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu_card">
+                    <img src="./image/pizza.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Pizza</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
+                </div>
+
+                
+                <div class="menu_card">
+                    <img src="./image/Hot_dog.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">hotdog</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
+                </div>
+
+                
+                <div class="menu_card">
+                    <img src="./image/pizza.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Pizza</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="menu_card">
+                    <img src="./image/juse.jpg" class="menu_card-img" alt="">
+                    <div class="menu_card_info">
+                        <p class="menu_card_info-title txt-yellow">Juice</p>
+                        <p class="menu_card_info-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_card_info-price">$20.00</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <button class="menu_card_btn">Order Now</button>
+                    </div>
                 </div>
             </div>
-        </section>    
-    </main>
+        </section>
 
+        <section id="gallery" class="content_center">
+            <h2>Our <span class="txt-yellow">Gallery</span></h2>
+
+            <div class="gallery_flex">
+                <img src="./image//gallary_1.jpg" alt="">
+                <img src="./image//gallary_2.jpg" alt="">
+                <img src="./image//gallary_3.jpg" alt="">
+                <img src="./image//gallary_4.jpg" alt="">
+                <img src="./image//gallary_5.jpg" alt="">
+                <img src="./image//gallary_6.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="review" class="content_center">
+            <h2>Customer <span class="txt-yellow">Review</span></h2>
+
+            <div class="review_grid">
+                <div class="review_card">
+                    <div class="review_img">
+                        <img src="./image/review_1.png"  alt="">
+                    </div>
+
+                    <div class="review_info">
+                        <p class="name">John Doe</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+    
+                        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis iste quasi dolorum impedit vel ad ullam unde maxime adipisci in harum enim est, sed totam! Sapiente ullam exercitationem ducimus.</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_img">
+                        <img src="./image/review_2.png"  alt="">
+                    </div>
+    
+                    <div class="review_info">
+                        <p class="name">John Doe</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+    
+                        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis iste quasi dolorum impedit vel ad ullam unde maxime adipisci in harum enim est, sed totam! Sapiente ullam exercitationem ducimus.</p>
+                    </div>
+                </div>
+    
+                <div class="review_card">
+                    <div class="review_img">
+                        <img src="./image/review_3.png"  alt="">
+                    </div>
+    
+                    <div class="review_info">
+                        <p class="name">John Doe</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+    
+                        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis iste quasi dolorum impedit vel ad ullam unde maxime adipisci in harum enim est, sed totam! Sapiente ullam exercitationem ducimus.</p>
+                    </div>
+                </div>
+    
+                <div class="review_card">
+                    <div class="review_img">
+                        <img src="./image/review_4.png"  alt="">
+                    </div>
+    
+                    <div class="review_info">
+                        <p class="name">John Doe</p>
+                        <p class="menu_card_info-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+    
+                        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis iste quasi dolorum impedit vel ad ullam unde maxime adipisci in harum enim est, sed totam! Sapiente ullam exercitationem ducimus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="content_center">
+            <h2> <span class="txt-yellow">Order</span> Now</h2>
+
+            <div class="order_grid">
+                <div class="content_left">
+                    <form action="" class="order_form">
+                        <div class="inp_row">
+
+                            <div class="inpcon">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="your name">
+                            </div>
+
+                            <div class="inpcon">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="your email">
+                            </div>
+
+                        </div>
+
+                        <div class="inp_row">
+
+                            <div class="inpcon">
+                                <label for="tel">Number</label>
+                                <input type="text" id="tel" placeholder="your number">
+                            </div>
+
+                            <div class="inpcon">
+                                <label for="number">How Much</label>
+                                <input type="number" id="number" placeholder="your order">
+                            </div>
+
+                        </div>
+
+                        <div class="inp_row">
+
+                            <div class="inpcon">
+                                <label for="order">Your Order</label>
+                                <input type="text" id="order" placeholder="Food name">
+                            </div>
+
+                            <div class="inpcon">
+                                <label for="address">Address</label>
+                                <input type="address" id="address" placeholder="your address">
+                            </div>
+
+                        </div>
+
+                        <button class="order_now">Order Now </button>
+                    </form>
+                </div>
+                <div class="content_right">
+                    <img src="./image/order_image.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section id="team" class="content_center">
+            <h2> Our <span class="txt-yellow">Team</span> </h2>
+
+            <div class="team_grid">
+            
+                <div class="team_box">
+                    <img src="./image/chef1.png" alt="">
+                </div>
+
+                <div class="team_box">
+                    <img src="./image/chef2.png" alt="">
+                </div>
+                
+                <div class="team_box">
+                    <img src="./image/chef3.jpg" alt="">
+                </div>
+
+                
+                <div class="team_box">
+                    <img src="./image/chef4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="content-center">
 
