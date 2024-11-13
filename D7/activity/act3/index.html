@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | JONEL HATWELL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <!-- Shopping Cart -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItems" class="cart-items"></ul>
+            <p id="total" class="total">Total: $0.00</p>
+        </div>
+
+        <!-- Item List -->
+        <div class="item-list">
+            <h2>Items for Sale</h2>
+            <div class="item" data-name="Item 1" data-price="10">
+                <span>Item 1 - $10.00</span>
+                <button onclick="addItemToCart('Item 1', 10)">Add to Cart</button>
+            </div>
+            <div class="item" data-name="Item 2" data-price="20">
+                <span>Item 2 - $20.00</span>
+                <button onclick="addItemToCart('Item 2', 20)">Add to Cart</button>
+            </div>
+            <div class="item" data-name="Item 3" data-price="15">
+                <span>Item 3 - $15.00</span>
+                <button onclick="addItemToCart('Item 3', 15)">Add to Cart</button>
+            </div>
+        </div>
+
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

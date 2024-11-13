@@ -1,0 +1,72 @@
+:root {
+    --color-background: #f9f9f9;
+    --color-white: #fff;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-text: #333;
+    --color-border: #ddd;
+    --color-primary: #007bff;
+    --color-primary-hover: #0056b3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--color-shadow);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+.item-list, .cart {
+    margin-top: 20px;
+}
+
+.item, .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+button {
+    padding: 5px 10px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.cart-item input {
+    width: 50px;
+    text-align: center;
+}
+
+.total {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: bold;
+}
