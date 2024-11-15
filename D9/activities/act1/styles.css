@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #007bff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+    font-family: "Roboto", sans-serif;
+}
+
+img{
+    display: block;
+}
+
+.content_center {
+    margin: auto;
+    border: 1px solid black;
+    max-width: 1300px;
+}
+
+header {
+    padding: 1rem 0rem;
+}
+
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: white;
+}
+
+#product_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+.card_item {
+    width: 315px;
+    height: 490px;
+    border-radius: 15px; /* Rounded corners for a smooth look */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+    backdrop-filter: blur(20px); /* Apply glassy blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border for glassy effect */
+    overflow: hidden; /* Ensures child elements stay inside rounded edges */
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.card_header {
+    width: 100% !important;
+    height: 45% !important;
+}
+
+.card_header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card_body {
+    width: 100% !important;
+    height: 55% !important;
+    padding: 1rem;
+}
+
+.card_item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+
+    /* Ellipsis for long text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for hidden text */
+    display: block; /* Ensure it's a block element */
+}
+
+.card_item-price{
+    margin-top: .5rem;
+    margin-bottom: .9rem;
+    font-weight: bold;
+    font-size: 1.050rem;
+}
+
+.card_item-desc {
+    max-height: 160px; /* Set a max height for the description */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    font-size: 0.9rem; /* Adjust font size for better readability */
+    line-height: 1.2rem; /* Line spacing for clarity */
+    padding-right: 0.5rem; /* Add some padding to the right to avoid content overlapping the scrollbar */
+}
+
+.card_item-desc::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar in WebKit browsers */
+}
+
+/* Show scrollbar on hover */
+.card_item-desc:hover {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--primary-color) #f1f1f1; /* Thumb and track color */
+}
+
+.card_item-desc:hover::-webkit-scrollbar {
+    width: 8px; /* Make scrollbar visible on hover */
+}
+
+.card_item-desc:hover::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+    border-radius: 5px;
+}
+
+.card_item-desc:hover::-webkit-scrollbar-thumb {
+    background: var(--primary-color); /* Thumb color */
+    border-radius: 5px;
+}
+
+.card_item-desc:hover::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Darker thumb color on hover */
+}
