@@ -1,0 +1,66 @@
+// Step 1: Create a new MongoDB Atlas cluster and connect to it using MongoDB Compass .
+
+// Step 2: In MongoDB Compass, create a new database called "Bookstore" and a collection called "Books".
+use Bookstore
+db.createCollection("Books") 
+
+// Step 3: Perform the following CRUD operations using MongoDB Compass:
+
+// a) Create Operation:
+// Insert at least three book documents with different fields such as title, author, genre, and publication year.
+db.Books.insertMany([
+  { title: "1984", author: "George Orwell", genre: "Dystopian", publicationYear: 1949 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Fiction", publicationYear: 1960 },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", genre: "Classic", publicationYear: 1925 }
+])
+
+// b) Read Operation:
+// Retrieve all the book documents in the "Books" collection.
+db.Books.find().pretty()
+
+// Retrieve a specific book document based on its title or author.
+db.Books.find({ author: "George Orwell" }).pretty()
+or
+db.Books.find({ title: "1984" }).pretty()
+
+// c) Update Operation:
+// Update the genre of a book document.
+
+db.Books.updateOne(
+   { title: "1984" },                    
+   { $set: { genre: "Science Fiction" } } 
+)
+
+or
+
+db.Books.updateMany(
+   { publicationYear: { $lt: 1950 } },       
+   { $set: { genre: "Classic Literature" } } 
+)
+
+// Update the publication year of a book document.
+
+db.Books.updateOne(
+   { title: "1984" },                  
+   { $set: { publicationYear: 1950 } }  
+)
+
+or
+
+db.Books.updateMany(
+   { publicationYear: { $lt: 1950 } },      
+   { $set: { publicationYear: 1950 } }
+)
+
+// d) Delete Operation:
+// Delete a book document based on its title or author.
+db.Books.deleteOne({ title: "1984" })
+
+or
+
+db.Books.deleteMany({ author: "George Orwell" })
+
+// Step 4: After each operation, verify the changes by re-reading the data from the "Books" collection.
+db.Books.find().pretty()
+
+// Note: Remember to clean up the cluster and delete the "Bookstore" database if no longer needed.
