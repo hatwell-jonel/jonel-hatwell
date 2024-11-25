@@ -1,23 +1,32 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const todoRoutes = require('./routes/todoRoutes');
+
 require('dotenv').config();
 
-// initialize express app
+// Express App
 const app = express();
 const port = process.env.PORT || 3000;
 
-// connect to mongodb
-const dbConnection = async () => {
+// Middleware
+app.use(express.json());
+
+// Connect to MongoDB
+const connectToDatabase = async () => {
+    const mongo_uri = process.env.MONGODB_URI;
     try {
-        await mongoose.connect(process.env.MONGODB_URI);
-        console.log('MongoDB connected successfully');
+        const connection = await mongoose.connect(mongo_uri);
+        console.log('Connected to MongoDB');        
     } catch (err) {
-        console.error("Error connecting to MongoDB:", err);
+        console.error(err);
     }
-};
- 
-// start server
-app.listen(port, () => {    
-    console.log(`Server is running on port ${port}`);
-    dbConnection();
+}
+
+// Routes
+app.use('/todos', todoRoutes);
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server is running in port ${port}`);
+    connectToDatabase();
 });
